@@ -9,7 +9,7 @@ body {
   font-family: 'Monsterrat', sans-serif;
 }
 
-/* h1 {font-family: 'Aboreto', cursive;font-size: 36px;} */
+h1 {font-weight: 900;}
 h2, .flex-projects li {
   font-family: 'Montserrat', sans-serif;;
   text-transform:uppercase;
