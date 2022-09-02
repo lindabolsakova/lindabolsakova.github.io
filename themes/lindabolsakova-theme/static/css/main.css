@@ -55,7 +55,7 @@ h2, .flex-projects li {
 }
 .flex-head{flex: 1;}
 .flex-projects{flex: 3;}
-.flex-projects li { padding-top: 6px;}
+.flex-projects li { padding-top: 10px;}
 .sidenav ul {
   padding-top: 8em;
   list-style-type: none;
