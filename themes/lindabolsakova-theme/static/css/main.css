@@ -70,6 +70,7 @@ h2, .flex-projects li {
 
 .sidenav a {
   text-decoration: none;
+.mai
   font-size: 18px;
   color: inherit;
 }
@@ -82,8 +83,8 @@ h2, .flex-projects li {
 
 /* MAIN PANEL */
 .main {
-  margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
-  font-size: 16px; /* Increased text to enable scrolling */
+  margin-left: calc(var(--sidenav-width) + 5em); /* Same as the width of the sidenav */
+  font-size: 14px; /* Increased text to enable scrolling */
   padding: 30px 30px;
 }
 .text {padding-top: 6em;}
