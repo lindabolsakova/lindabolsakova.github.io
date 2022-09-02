@@ -3,7 +3,7 @@
   <div class="art">
     <div class="slideshow-container">
 
-        {{range .Resources.Match "img/*" }}
+        {{range sort (.Resources.Match "img/*") ".Name" "desc" }}
       <div class="mySlides fade">
         <img src="{{ .Permalink }}" alt="project image" >
       </div>
@@ -30,7 +30,7 @@
       <h2>{{ .Title }}</h2>
       <div class="meta">
         <ul>
-          <li>{{ delimit .Params.materials ", "}}</li>
+          <li>{{ if .Params.materials }}{{ delimit .Params.materials ", " }}{{ else }}{{ end }}</li>
           <br/>
           <li><em>{{ .Params.location }}</em></li>
           <li><em>{{ .Params.time }}</em></li>
