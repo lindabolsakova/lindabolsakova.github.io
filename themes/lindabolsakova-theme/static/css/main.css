@@ -53,16 +53,18 @@ h2, .flex-projects li {
   flex-direction: column;
   align-content: space-between;
 }
-.flex-head{flex: 1;}
+.flex-head{flex: 0.8;}
 .flex-projects{flex: 3;}
 .flex-projects li { padding-top: 10px;}
 .sidenav ul {
   padding-top: 8em;
   list-style-type: none;
   padding-left: 0;}
-.flex-info{font-weight: bold;padding-bottom: 10px;}
+.flex-info{padding-bottom: 10px;text-transform: uppercase;}
 .sidenav h1 {
   color: var(--highlight);
+  font-size: 24px;
+  font-style: italic;
   padding-bottom: 0;
   margin-bottom:0;
   z-index: 1;
@@ -70,8 +72,7 @@ h2, .flex-projects li {
 
 .sidenav a {
   text-decoration: none;
-.mai
-  font-size: 18px;
+  font-size: 16px;
   color: inherit;
 }
 
@@ -89,7 +90,7 @@ h2, .flex-projects li {
 }
 .text {padding-top: 6em;}
 .text article{text-align: justify;text-justify: inter-word;}
-.main h2 {font-size: 20px;font-weight: normal;}
+.main h2 {font-size: 16px;font-weight: normal;}
 
 .meta ul{
   list-style-type: none;
@@ -99,7 +100,7 @@ h2, .flex-projects li {
 
 /* INFO PAGE */
 .info-headline {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
   color: var(--highlight);
 }
