@@ -1,0 +1,4 @@
+baseURL = 'https://lindabolsakova.github.io'
+languageCode = 'en-us'
+title = 'Linda Bolsakova - Portfolio'
+theme = 'lindabolsakova-theme'

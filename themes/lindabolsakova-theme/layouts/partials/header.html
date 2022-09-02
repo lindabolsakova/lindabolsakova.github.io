@@ -1,0 +1,33 @@
+<!-- TODO - fix bug where button appears 'under' panel -->
+<button class="sidenav-button" onclick="toggle()" style="font-size: 30px;" ><i class="fa fa-bars"></i></button>
+<div class="sidenav">
+    <div class="blocker"></div>
+    <div class="items">
+        <div class="flex-head">
+            <!-- TODO Find a better solution for this - Goal - no space between words both on different line -->
+            <h1>Linda <br>
+            Boļšakova</h1>
+        </div>
+        <div class="flex-projects">
+            <ul>
+                <!-- <li><a href="/">Home</a></li> -->
+                {{ range (where .Site.RegularPages "Section" "projects") }}
+                <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+        <!-- TODO insert links -->
+        <div class="flex-info">
+            {{ with .Site.GetPage "/about" }}
+            <p><a href="{{ .Permalink }}">Info</a>
+                {{ end }}
+                <span style="float:right;padding-right:0.5em;">
+                    <a href="https://www.facebook.com/linda.bolsakova.7?ref=bookmarks"
+                       class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/linda_bolsakova/"
+                       class="fa fa-instagram"></a>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>

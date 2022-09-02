@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="main">
+  <div class="art">
+    <div class="slideshow-container">
+
+        {{range .Resources.Match "img/*" }}
+      <div class="mySlides fade">
+        <img src="{{ .Permalink }}" alt="project image" >
+      </div>
+        {{ end }}
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      {{ range $index, $page := .Resources.Match "img/*"}}
+      <span class="dot" onclick="currentSlide({{ add $index 1 }})"></span>
+      {{ end }}
+    </div>
+
+  </div>
+  <!-- Project Text -->
+  <div class="text">
+    <article>
+
+      <h2>{{ .Title }}</h2>
+      <div class="meta">
+        <ul>
+          <li>{{ delimit .Params.materials ", "}}</li>
+          <br/>
+          <li><em>{{ .Params.location }}</em></li>
+          <li><em>{{ .Params.time }}</em></li>
+        </ul>
+        <hr/>
+      </div>
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+  {{ end }}

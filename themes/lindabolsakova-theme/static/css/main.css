@@ -1,0 +1,159 @@
+:root {
+  --sidenav-width: 20em;
+  --background: #ffffff;
+  --text: black;
+  --highlight:#cfc3b2;
+
+}
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {font-family: 'Aboreto', cursive;font-size: 36px;}
+h2 {font-family: 'Montserrat', sans-serif;}
+.flex-projects li {
+  font-family: 'Montserrat', sans-serif;;
+  text-transform:uppercase;
+  font-style:italic;}
+
+/* HOMEPAGE IMAGE */
+/* .bg { */
+/*   position: fixed; */
+/*   width: 100%; */
+/*   height: 100%; */
+/* } */
+/* .bg img { */
+/*   position: absolute; */
+/*   top: 0; */
+/*   left: 0; */
+/*   right: 0; */
+/*   bottom: 0; */
+/*   margin: auto; */
+/*   min-width: 50%; */
+/*   min-height: 50%; */
+/* } */
+
+
+/* SIDE BAR */
+.sidenav {
+  height: 100%;
+  width: var(--sidenav-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 2em;
+  display:flex;
+  z-index: 2;
+}
+
+.sidenav .items {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.flex-head{flex: 1;}
+.flex-projects{flex: 3;}
+.sidenav ul {
+  padding-top: 8em;
+  list-style-type: none;
+  padding-left: 0;}
+.flex-info{font-weight: bold;padding-bottom: 10px;}
+.sidenav h1 {
+  color: var(--highlight);
+  padding-bottom: 0;
+  margin-bottom:0;
+  z-index: 1;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #818181;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav-button {display: none;}
+
+
+/* MAIN PANEL */
+.main {
+  margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 30px 30px;
+}
+
+.meta ul{
+  list-style-type: none;
+  padding-left:0;
+}
+
+
+/* INFO PAGE */
+.info-headline {
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--highlight);
+}
+.info-quote {font-style: italic;}
+.info-quote-attrib {text-align: right;padding-bottom: 10em;}
+
+.info-headline, .info-main, .info-quote {
+  text-indent: 3em;
+}
+.info-contact {text-align: right;}
+.info-contact a {text-decoration: none;color: black;}
+.info-contact a:hover {color: grey;}
+
+
+
+/* SMALLER SCREENS */
+@media screen and (max-width: 700px) {
+.sidenav-button {display: block;z-index:1;}
+  .sidenav { /* it's a mobile sidebar, blocker and content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* to cover the whole screen */
+    height: 100vh;
+    padding: 0;  /* to override the default padding */
+    background: rgba(0,0,0, .5); /* half transparent background */
+    display: none;
+    z-index: 99999; /* to be on top of any other elements */
+  }
+  .sidenav.visible {
+    display: block;
+  }
+  /*cover the whole screen and to detect user click on background */
+  .sidenav .blocker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  /* user content */
+  .sidenav .items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 10px;
+    background: #FFF;
+    height: 100%;
+    width: 280px;
+    left: -50%;   /* will be animated to left: 0, by animation */
+    animation: slide 0.5s forwards;
+  }
+  @keyframes slide {
+    100% { left: 0; }
+  }
+.sidebar .content{
+  padding: 12px;
+}
+  .main {
+    margin-left: 0;
+
+  }
+}

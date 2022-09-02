@@ -1,0 +1,18 @@
+name = "LindaBolsakova Theme"
+license = "MIT"
+licenselink = ""
+description = "A simple theme for generating an artist portfolio site"
+homepage = "https://lindabosakova.com"
+tags = ["artist", "portfolio", "project-based"]
+features = ["sidebar", "image-slider"]
+min_version = "0.1.0"
+
+[author]
+  name = "Eoin Carney"
+  homepage = "https://spool-five.com"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

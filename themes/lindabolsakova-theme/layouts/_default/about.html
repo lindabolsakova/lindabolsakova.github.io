@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<div class=main>
+    <h2>{{ .Title }}</h2>
+    <div class="info-headline">
+        <p> {{ .Params.headline }}</p>
+    </div>
+    <div class="info-main">
+        {{ .Content }}
+    </div>
+    <div class="info-quote">
+        <p>"{{ .Params.quote }}"</p>
+    </div>
+    <div class="info-quote-attrib">
+        <p>/{{ .Params.quoteauthor }}/</p>
+    </div>
+    <hr>
+    <div class="info-contact">
+        <a href="mailto:bolsakovalinda@gmail.com" class="fa fa-envelope">
+            bolsakovalinda@gmail.com</a>
+    </div>
+
+</div>
+
+{{ end }}
