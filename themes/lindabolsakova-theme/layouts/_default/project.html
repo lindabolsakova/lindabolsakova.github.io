@@ -16,12 +16,12 @@
     <br>
 
     <!-- The dots/circles -->
-    <div style="text-align:center">
-      {{ range $index, $page := .Resources.Match "img/*"}}
-      <span class="dot" onclick="currentSlide({{ add $index 1 }})"></span>
-      {{ end }}
-    </div>
-
+    <!-- <div style="text-align:center">
+         {{ range $index, $page := .Resources.Match "img/*"}}
+         <span class="dot" onclick="currentSlide({{ add $index 1 }})"></span>
+         {{ end }}
+         </div>
+    -->
   </div>
   <!-- Project Text -->
   <div class="text">
