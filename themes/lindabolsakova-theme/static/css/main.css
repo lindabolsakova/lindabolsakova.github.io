@@ -6,12 +6,11 @@
 
 }
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Monsterrat', sans-serif;
 }
 
-h1 {font-family: 'Aboreto', cursive;font-size: 36px;}
-h2 {font-family: 'Montserrat', sans-serif;}
-.flex-projects li {
+/* h1 {font-family: 'Aboreto', cursive;font-size: 36px;} */
+h2, .flex-projects li {
   font-family: 'Montserrat', sans-serif;;
   text-transform:uppercase;
   font-style:italic;}
@@ -56,6 +55,7 @@ h2 {font-family: 'Montserrat', sans-serif;}
 }
 .flex-head{flex: 1;}
 .flex-projects{flex: 3;}
+.flex-projects li { padding-top: 6px;}
 .sidenav ul {
   padding-top: 8em;
   list-style-type: none;
@@ -70,12 +70,12 @@ h2 {font-family: 'Montserrat', sans-serif;}
 
 .sidenav a {
   text-decoration: none;
-  font-size: 22px;
+  font-size: 18px;
   color: #818181;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: var(--highlight);
 }
 .sidenav-button {display: none;}
 
@@ -83,7 +83,7 @@ h2 {font-family: 'Montserrat', sans-serif;}
 /* MAIN PANEL */
 .main {
   margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
+  font-size: 16px; /* Increased text to enable scrolling */
   padding: 30px 30px;
 }
 
