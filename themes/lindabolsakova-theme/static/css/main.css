@@ -86,7 +86,7 @@ h2, .flex-projects li {
 /* MAIN PANEL */
 .main {
   margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
-  padding: 30px 10em;
+  padding: 30px 8%;
 }
 .text {padding-top: 6em;}
 .text article{text-align: justify;text-justify: inter-word;font-weight: 300;}
@@ -159,6 +159,6 @@ h2, .flex-projects li {
 }
   .main {
     margin-left: 0;
-
+    padding: 30px 2em;
   }
 }
