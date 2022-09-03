@@ -9,7 +9,7 @@ body {
   font-family: 'Monsterrat', sans-serif;
 }
 
-h1 {font-weight: 900;}
+h1 {font-weight: bold;}
 h2, .flex-projects li {
   font-family: 'Montserrat', sans-serif;;
   text-transform:uppercase;
@@ -60,7 +60,8 @@ h2, .flex-projects li {
   padding-top: 8em;
   list-style-type: none;
   padding-left: 0;}
-.flex-info{padding-bottom: 10px;text-transform: uppercase;}
+.flex-info{padding-bottom: 20px;text-transform: uppercase;}
+.social-icons {float: right;letter-spacing: 8px;}
 .sidenav h1 {
   color: var(--highlight);
   font-size: 24px;
@@ -84,12 +85,11 @@ h2, .flex-projects li {
 
 /* MAIN PANEL */
 .main {
-  margin-left: calc(var(--sidenav-width) + 5em); /* Same as the width of the sidenav */
-  font-size: 14px; /* Increased text to enable scrolling */
-  padding: 30px 30px;
+  margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
+  padding: 30px 10em;
 }
 .text {padding-top: 6em;}
-.text article{text-align: justify;text-justify: inter-word;}
+.text article{text-align: justify;text-justify: inter-word;font-weight: 300;}
 .main h2 {font-size: 16px;font-weight: normal;}
 
 .meta ul{
@@ -99,7 +99,7 @@ h2, .flex-projects li {
 
 
 /* INFO PAGE */
-.info-headline {
+.info-headline, .info-title {
   font-size: 20px;
   font-weight: bold;
   color: var(--highlight);
@@ -112,7 +112,7 @@ h2, .flex-projects li {
 }
 .info-contact {text-align: right;}
 .info-contact a {text-decoration: none;color: black;}
-.info-contact a:hover {color: grey;}
+.info-contact a:hover {color: var(--highlight);}
 
 
 

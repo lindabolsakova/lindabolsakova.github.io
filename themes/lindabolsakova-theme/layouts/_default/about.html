@@ -1,16 +1,19 @@
 {{ define "main" }}
 
 <div class=main>
-    <h2>{{ .Title }}</h2>
+    <h2 class="info-title">{{ .Title }}</h2>
     <div class="info-headline">
         <p> {{ .Params.headline }}</p>
     </div>
+    <br>
     <div class="info-main">
         {{ .Content }}
     </div>
+    <br>
     <div class="info-quote">
         <p>"{{ .Params.quote }}"</p>
     </div>
+    <br>
     <div class="info-quote-attrib">
         <p>/{{ .Params.quoteauthor }}/</p>
     </div>

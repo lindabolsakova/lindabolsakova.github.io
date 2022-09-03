@@ -27,6 +27,4 @@ Text by Santa Hirša
 
 Photos Toms Harjo
 
-[Interview - diena.lv](https://www.diena.lv/raksts/kd/maksla/nakotnes-ziedu-atminas.-saruna-ar-makslinieci-lindu-bolsakovu-14233355?fbclid=IwAR3otMzX63ckRpPj4TKUV8voy5SKqPDeVEZJQnrFxdppwjoBUGR-7CyVM2I)
-
-
+{{% a_blank "Interview - diena.lv" "https://www.diena.lv/raksts/kd/maksla/nakotnes-ziedu-atminas.-saruna-ar-makslinieci-lindu-bolsakovu-14233355?fbclid=IwAR3otMzX63ckRpPj4TKUV8voy5SKqPDeVEZJQnrFxdppwjoBUGR-7CyVM2I" %}}

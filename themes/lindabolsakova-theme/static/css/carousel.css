@@ -1,16 +1,30 @@
 
 /* Slideshow container */
+/* .slideshow-container { */
+/*   width: 100%; */
+/*   position: relative; */
+/*   margin: auto; */
+/* } */
+/* .slideshow-container img { */
+/*   object-fit: cover; */
+/*   width: 100%; */
+/*   height: 85vh; */
+/* } */
 .slideshow-container {
-  width: 100%;
   position: relative;
-  margin: auto;
-}
-.slideshow-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 85vh;
+  overflow: hidden;
+  height: 85vh; /* whatever height you want it to be */
+  background-color: black;
 }
 
+.slideshow-container img {
+  /* centre the image */
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
