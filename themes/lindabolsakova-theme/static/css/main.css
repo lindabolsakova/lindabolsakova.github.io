@@ -18,7 +18,10 @@ h2, .flex-projects li {
   text-transform:uppercase;
   font-style:italic;}
 a:hover {color: var(--highlight);}
-
+.video {
+  width: 100%;
+  height: auto;
+}
 /* SIDE BAR */
 .sidenav {
   height: 100%;
