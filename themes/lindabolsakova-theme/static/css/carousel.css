@@ -2,7 +2,6 @@
   position: relative;
   overflow: hidden;
   height: 85vh; /* whatever height you want it to be */
-  background-color: black;
 }
 
 .slideshow-container img {
@@ -26,7 +25,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;

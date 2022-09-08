@@ -18,4 +18,11 @@ Sound piece: Ceylan Hay aka Bell Lungs
 Constume design: Anastasija Golubeva
 Photos: Andrejs Strokins, Ingus Bajārs
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 {{< video src="/video/01_Intimacy_of_strangers.mp4" type="video/mp4" preload="auto" >}}

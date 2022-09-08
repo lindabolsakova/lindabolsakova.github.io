@@ -11,7 +11,6 @@
 body {
   font-family: 'Monsterrat', sans-serif;
 }
-
 h1 {font-weight: bold;}
 h2, .flex-projects li {
   font-family: 'Montserrat', sans-serif;;
@@ -22,6 +21,7 @@ a:hover {color: var(--highlight);}
   width: 100%;
   height: auto;
 }
+
 /* SIDE BAR */
 .sidenav {
   height: 100%;
@@ -69,21 +69,18 @@ a:hover {color: var(--highlight);}
 }
 .sidenav-button {display: none;}
 
-
 /* MAIN PANEL */
 .main {
   margin-left: var(--sidenav-width); /* Same as the width of the sidenav */
-  padding: 30px 8%;
+  padding: 30px 4%;
 }
 .text {padding-top: 6em;}
 .text article{text-align: justify;text-justify: inter-word;font-weight: 300;}
 .main h2 {font-size: 16px;font-weight: normal;}
-
 .meta ul{
   list-style-type: none;
   padding-left:0;
 }
-
 
 /* INFO PAGE */
 .info-headline, .info-title {
@@ -96,8 +93,7 @@ a:hover {color: var(--highlight);}
 .info-headline, .info-main, .info-quote {text-indent: 3em;}
 .info-contact {text-align: right;}
 .info-contact a {text-decoration: none;color: inherit;}
-
-
+.info-contact a:hover {color:var(--highlight)}
 
 /* SMALLER SCREENS */
 @media screen and (max-width: 700px) {
