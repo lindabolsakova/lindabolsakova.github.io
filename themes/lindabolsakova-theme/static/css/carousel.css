@@ -6,8 +6,9 @@
 
 .slideshow-container img {
   /* centre the image */
-  height: 100%;
   position: absolute;
+  object-fit: fill;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
