@@ -1,7 +1,7 @@
 .slideshow-container {
   position: relative;
   overflow: hidden;
-  max-height: 85vh;
+  height: 85vh;
 }
 
 .slideshow-container img {
