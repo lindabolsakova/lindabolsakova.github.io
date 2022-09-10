@@ -1,7 +1,7 @@
 .slideshow-container {
   position: relative;
   overflow: hidden;
-  height: 85vh; /* whatever height you want it to be */
+  max-height: 85vh;
 }
 
 .slideshow-container img {
@@ -51,4 +51,5 @@
 }
 
 @media screen and (max-width: 700px) {
-  .slideshow-container {height: 50vh;}
+.slideshow-container {height: 25vh;}
+}
