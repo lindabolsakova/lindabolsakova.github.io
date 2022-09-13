@@ -6,7 +6,7 @@
       {{ if .Resources.Match "img/*"}}
         {{range sort (.Resources.Match "img/*") ".Name" "desc" }}
       <div class="mySlides fade">
-        <img src="{{ .Permalink }}" alt="project image" >
+        <img src="{{ (.Resize "1400x").Permalink }}" alt="project image" >
       </div>
         {{ end }}
       {{ else }}
